@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mamal72/rtl-md.svg?branch=master)](https://travis-ci.org/mamal72/rtl-md)
+[![npm version](https://badge.fury.io/js/rtl-md.svg)](https://badge.fury.io/js/rtl-md)
 # rtl-md
 **rtl-md** is a markdown parser with RTL languages detection. This module converts the `Markdown` to `HTML` and fixes the elements direction based on the contents of them. This module made in order to help users publish their RTL markdown contents easily, without having to write boring HTML. Now, I can write and publish my `README.md` files in RTL languages too just like LTR languages!
 
@@ -9,7 +11,7 @@ npm install --save rtl-md
 
 # Usage
 ```js
-import rtlMd from 'rtl-md';
+import rmd from 'rtl-md';
 const md = `# Some Markdown!
 ## Some english ltr stuff here and then, some rtl maybe.
 
@@ -19,7 +21,7 @@ const md = `# Some Markdown!
 
 [سعدی شیرازی](https://en.wikiquote.org/wiki/Saadi)
 `
-const html = rtlMd(md);
+const html = rmd(md);
 
 // The output
 /*
